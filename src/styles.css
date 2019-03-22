@@ -1,6 +1,16 @@
 .well{
   margin-left: 1%;
-  background-color: #DCDCDC;
+  background-color:  #D3D3D3;
+}
+
+.jumbotron{
+  text-decoration-color: white;
+  background-image:  url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/1-milkyway.jpg");
+  text-align: center;
+}
+
+h1{
+  color: white;
 }
 
 #show {
