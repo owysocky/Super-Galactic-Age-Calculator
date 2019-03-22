@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
     "webpack": "4.19.1"
   },
   "devDependencies": {
