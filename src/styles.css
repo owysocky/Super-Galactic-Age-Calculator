@@ -2,3 +2,7 @@
   margin-left: 1%;
   background-color: #DCDCDC;
 }
+
+#show {
+  display: none;
+}

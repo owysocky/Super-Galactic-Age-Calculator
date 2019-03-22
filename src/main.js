@@ -28,5 +28,10 @@ $(document).ready(function() {
     $('#venusWght').text(user.venusGravity().toFixed(2));
     $('#marsWght').text(user.marsGravity().toFixed(2));
     $('#jupiterWght').text(user.jupiterGravity().toFixed(2));
+
+    if(user.lifeExpectancyMercury()<=0 || user.lifeExpectancyVenus()<=0 || user.lifeExpectancyMars()<=0 || user.lifeExpectancyJupiter()<=0){
+      $("#hide").hide();
+      $("#show").show();
+    }
   });
 });
