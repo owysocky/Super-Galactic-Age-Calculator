@@ -17,6 +17,7 @@ _This is a program that counts users age on other planets._
 | **User inputs date of birth, and webapp multiplies it by the year of picked planet** | "01/01/1986" | Jupiter: "391.38" |
 | **Webapp counts life expectancy on each planet** | "01/01/1986" | Jupiter: "794.62" |
 | **Webapp counts surpassed life expectancy on each planet** | "01/01/1786" | Jupiter: "1577.38" |
+| **Webapp counts users weight on each planet** | "25" | Jupiter: "66" |
 
 ## Known Bugs
 

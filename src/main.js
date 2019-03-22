@@ -9,8 +9,8 @@ $(document).ready(function() {
   $('#astro').submit(function(event) {
     event.preventDefault();
 
-    let weight = parseInt($('#weight').val());
     let years = 2019 - parseInt(($('#date').val()).slice(0, 4));
+    let weight = parseInt($('#kg').val());
 
     let user = new Astro(years, weight);
 
@@ -24,6 +24,9 @@ $(document).ready(function() {
     $('#marsExp').text(user.lifeExpectancyMars().toFixed(2));
     $('#jupiterExp').text(user.lifeExpectancyJupiter().toFixed(2));
 
-
+    $('#mercuryWght').text(user.mercuryGravity().toFixed(2));
+    $('#venusWght').text(user.venusGravity().toFixed(2));
+    $('#marsWght').text(user.marsGravity().toFixed(2));
+    $('#jupiterWght').text(user.jupiterGravity().toFixed(2));
   });
 });
