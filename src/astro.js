@@ -1,6 +1,7 @@
 export default class Astro {
   constructor(year, kg){
     this.year = year;
+    this.kg = kg;
   }
 
   mercury(){
@@ -34,6 +35,22 @@ export default class Astro {
 
   lifeExpectancyJupiter(){
     return (1186 - this.year*11.86);
+  }
+
+  mercuryGravity(){
+    return (this.kg*0.26);
+  }
+
+  venusGravity(){
+    return (this.kg*0.9);
+  }
+
+  marsGravity(){
+    return (this.kg*0.37);
+  }
+
+  jupiterGravity(){
+    return (this.kg*2.64);
   }
 
 }

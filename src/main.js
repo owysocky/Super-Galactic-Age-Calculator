@@ -9,20 +9,20 @@ $(document).ready(function() {
   $('#astro').submit(function(event) {
     event.preventDefault();
 
-    let weight = $('#weight').val();
+    let weight = parseInt($('#weight').val());
     let years = 2019 - parseInt(($('#date').val()).slice(0, 4));
 
     let user = new Astro(years, weight);
 
-    $('#mercury').text(user.mercury());
-    $('#venus').text(user.venus());
-    $('#mars').text(user.mars());
-    $('#jupiter').text(user.jupiter());
+    $('#mercury').text(user.mercury().toFixed(2));
+    $('#venus').text(user.venus().toFixed(2));
+    $('#mars').text(user.mars().toFixed(2));
+    $('#jupiter').text(user.jupiter().toFixed(2));
 
-    $('#mercuryExp').text(user.lifeExpectancyMercury());
-    $('#venusExp').text(user.lifeExpectancyVenus());
-    $('#marsExp').text(user.lifeExpectancyMars());
-    $('#jupiterExp').text(user.lifeExpectancyJupiter());
+    $('#mercuryExp').text(user.lifeExpectancyMercury().toFixed(2));
+    $('#venusExp').text(user.lifeExpectancyVenus().toFixed(2));
+    $('#marsExp').text(user.lifeExpectancyMars().toFixed(2));
+    $('#jupiterExp').text(user.lifeExpectancyJupiter().toFixed(2));
 
 
   });
