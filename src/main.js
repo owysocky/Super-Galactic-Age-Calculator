@@ -9,9 +9,9 @@ $(document).ready(function() {
   $('#astro').submit(function(event) {
     event.preventDefault();
 
-    let years = 2019 - parseInt(($('#date').val()).slice(0, 4));
+    let todayDate = new Date();
+    let years = parseInt(todayDate.getFullYear()) - parseInt(($('#date').val()).slice(0, 4));
     let weight = parseInt($('#kg').val());
-
     let user = new Astro(years, weight);
 
     $('#mercury').text(user.mercury().toFixed(2));
